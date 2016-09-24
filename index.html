@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="">
+        <!-- <div class="page"> -->
+
+            <!-- <header id="header" class="page-header"> -->
+            <header id="header" class="">
+
+                <h3 class="c-header">FirstMuffins</h3>
+
+                <div class="c-image">
+                    <img src="logo.png" alt="Smiley face" class="c-image-src"></img>
+                </div>
+
+                <div class="header-search desktop">
+                   <form id="search_mini_form" action="http://www.firstmuffin.com/" method="get">
+                      <div class="input-box">
+                         <label for="search" class="c-search">Search:</label>
+                         <input id="search" type="search" autocomplete="off" class=" c-input-search input-text required-entry" name="q" value="" maxlength="128" placeholder="Search entire store here...">
+                         <button type="submit" title="Search" class="button c-search-button">
+                         <span> Search </span>
+                         </button>
+                      </div>
+                      <div id="search_autocomplete" class="search-autocomplete"></div>
+                   </form>
+                </div>
+
+
+                <div id="cart">
+                   <div class="heading">
+                      <div class="cart_top_in">
+                         <h4>Shopping Cart</h4>
+                         <a><span id="carttotal">0 item(s) - $0.00</span></a>
+                      </div>
+                   </div>
+                   <div class="content">
+                      <div class="mini-cart-info">
+                         <div>
+                         </div>
+                      </div>
+                      <div class="mini-cart-total">
+                         <table>
+                            <tbody>
+                               <tr>
+                                  <td class="right"><b>Sub-Total:</b></td>
+                                  <td class="right"><span id="Cartsubtotal">0.00</span></td>
+                               </tr>
+                               <tr>
+                                  <td class="right"><b>Approx Shipping</b></td>
+                                  <td class="right"><span id="ui_lbl_Shippingcost">0.00</span></td>
+                               </tr>
+                               <tr class="last_item">
+                                  <td class="right"><b>Total:</b></td>
+                                  <td class="right"><span id="ui_lbl_ShippingTotal">0.00</span></td>
+                               </tr>
+                            </tbody>
+                         </table>
+                      </div>
+                      <div class="checkout"><a class="button mr" href="cart.aspx">View Cart</a><a class="button" href="cart.aspx">Checkout</a></div>
+                   </div>
+                </div>
+
+                <div class="c-links"><a href="#" id="wishlist-total">Wish List</a><a href="#">My Account</a><a href="#">Login</a><a href="cart.aspx">Checkout</a></div>
+
+
+                <div id="header-nav" class="skip-content nav-content">
+
+
+                    <div class="nav-container">
+                       <div class="nav">
+                          <ul id="nav" class="grid-full">
+                             <li class="level nav-1 first  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Newborn" class="">
+                                   <span >New Born</span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+                             <li class="level nav-2  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Baby%20Girl" class="">
+                                   <span style="color:;  ">Baby Girl</span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+                             <li class="level nav-3  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Baby%20Boy" class="">
+                                   <span style="color:;  ">Baby Boy</span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+                             <li class="level nav-4  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Shoes" class="">
+                                   <span style="color:;  ">Shoes </span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+                             <li class="level nav-5 parent  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Dresses" class="">
+                                   <span style="color:;">Dresses</span>
+                                </a>
+                             </li>
+                             <li class="level nav-6 last  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Sale" class="">
+                                   <span style="color:;  ">Sale </span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+                             <li class="level nav-7 last  no-level-thumbnail">
+                                <a style="background-color:" href="http://www.firstmuffin.com/Category.aspx?cat=Dresses#" class="">
+                                   <span style="color:;  ">Buy Gift Card </span>
+                                </a>
+                                <div class="level-top">
+                                   <div class="level  column1" style="">
+                                      <ul class=" level">
+
+                                      </ul>
+                                   </div>
+                                </div>
+                             </li>
+
+                          </ul>
+                       </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="u-text-align-center c-latest-products">Latest Products</div>
+    <div class="c-product-container-wrapper">
+
+        <div class="c-product-details " style="min-height: 200px;">
+           <div class="imgContainer c-product-image-container">
+              <a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-image-link">
+              <img src="110720163205purlple.jpg" class="c-image-product">
+              </a>
+           </div>
+           <div class="c-product-info-container u-clearfix">
+              <div class="c-product-name"><a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-product-name__link">
+                 Baby girl  polka dot pim pom play suit romper bodysuit</a>
+              </div>
+              <div class="c-product-number-wrap">
+                 <p class="c-product-number">
+                    View Item
+                    <!-- &nbsp;#&nbsp;DGB-XL-12 -->
+                 </p>
+              </div>
+              <!-- <div class="c-product-rating-wrap">
+                 <div id="DGB-XL-12" class="bazaarVoiceRating bv-rating-id_DGB-XL-12 c-rating"><span class="rating" title="82% positive reviews"><span class="ratingHighlight" style="width:82%"></span></span><span class="bv-review-count">(6)</span></div>
+              </div> -->
+              <div class="c-product-price-wrap">
+                 <div class="productPrice c-product-price">
+                    <span class="normalPrice">$34.54</span>
+                    <span class="uom">25/Case</span>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="c-product-details" style="min-height: 200px;">
+           <div class="imgContainer c-product-image-container">
+              <a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-image-link">
+              <img src="110720163205purlple.jpg" class="c-image-product">
+              </a>
+           </div>
+           <div class="c-product-info-container u-clearfix">
+              <div class="c-product-name"><a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-product-name__link">
+                 Baby girl  polka dot pim pom play suit romper bodysuit</a>
+              </div>
+              <div class="c-product-number-wrap">
+                 <p class="c-product-number">
+                    View Item
+                    <!-- &nbsp;#&nbsp;DGB-XL-12 -->
+                 </p>
+              </div>
+              <!-- <div class="c-product-rating-wrap">
+                 <div id="DGB-XL-12" class="bazaarVoiceRating bv-rating-id_DGB-XL-12 c-rating"><span class="rating" title="82% positive reviews"><span class="ratingHighlight" style="width:82%"></span></span><span class="bv-review-count">(6)</span></div>
+              </div> -->
+              <div class="c-product-price-wrap">
+                 <div class="productPrice c-product-price">
+                    <span class="normalPrice">$25.00</span>
+                    <span class="uom">$15.00</span>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="c-product-details " style="min-height: 200px;">
+           <div class="imgContainer c-product-image-container">
+              <a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-image-link">
+              <img src="110720163205purlple.jpg" class="c-image-product">
+              </a>
+           </div>
+           <div class="c-product-info-container u-clearfix">
+              <div class="c-product-name"><a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-product-name__link">
+                 Baby girl  polka dot pim pom play suit romper bodysuit</a>
+              </div>
+              <div class="c-product-number-wrap">
+                 <p class="c-product-number">
+                    View Item
+                    <!-- &nbsp;#&nbsp;DGB-XL-12 -->
+                 </p>
+              </div>
+              <!-- <div class="c-product-rating-wrap">
+                 <div id="DGB-XL-12" class="bazaarVoiceRating bv-rating-id_DGB-XL-12 c-rating"><span class="rating" title="82% positive reviews"><span class="ratingHighlight" style="width:82%"></span></span><span class="bv-review-count">(6)</span></div>
+              </div> -->
+              <div class="c-product-price-wrap">
+                 <div class="productPrice c-product-price">
+                    <span class="normalPrice">$34.54</span>
+                    <span class="uom">25/Case</span>
+                 </div>
+              </div>
+           </div>
+        </div>
+
+        <div class="c-product-details" style="min-height: 200px;">
+           <div class="imgContainer c-product-image-container">
+              <a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-image-link">
+              <img src="110720163205purlple.jpg" class="c-image-product">
+              </a>
+           </div>
+           <div class="c-product-info-container u-clearfix">
+              <div class="c-product-name"><a href="http://www.firstmuffin.com/Product.aspx?Productid=00008041" class="c-product-name__link">
+                 Baby girl  polka dot pim pom play suit romper bodysuit</a>
+              </div>
+              <div class="c-product-number-wrap">
+                 <p class="c-product-number">
+                    View Item
+                    <!-- &nbsp;#&nbsp;DGB-XL-12 -->
+                 </p>
+              </div>
+              <!-- <div class="c-product-rating-wrap">
+                 <div id="DGB-XL-12" class="bazaarVoiceRating bv-rating-id_DGB-XL-12 c-rating"><span class="rating" title="82% positive reviews"><span class="ratingHighlight" style="width:82%"></span></span><span class="bv-review-count">(6)</span></div>
+              </div> -->
+              <div class="c-product-price-wrap">
+                 <div class="productPrice c-product-price">
+                    <span class="normalPrice">$25.00</span>
+                    <span class="uom">$15.00</span>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
